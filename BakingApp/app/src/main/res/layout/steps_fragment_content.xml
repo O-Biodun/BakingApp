@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/steps"
+            android:id="@+id/stepsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            tools:text="0"
+            android:layout_toRightOf="@id/stepsTV"
+            android:id="@+id/stepValueTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            tools:text="Short Description"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/stepsTV"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/shortDescriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_marginRight="5dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/arrow_down"
+            android:layout_alignParentRight="true"
+            android:id="@+id/toogleButton"
+            android:layout_below="@id/stepsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            tools:text="Hello there!"
+            android:layout_marginBottom="10dp"
+
+            android:visibility="gone"
+            android:layout_below="@id/shortDescriptionTv"
+            android:id="@+id/fullDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/movie"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/fullDescription"
+            android:id="@+id/videoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:padding="@dimen/padding_ten_dp"
+            android:layout_below="@id/fullDescription"
+            android:visibility="gone"
+            android:id="@+id/imageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
